@@ -24,11 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      // Force the background to stay white and text to stay dark
+<body className="bg-white text-black">
+  {children}
+</body>
     </html>
   );
 }
