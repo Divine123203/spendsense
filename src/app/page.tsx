@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import CurrencySelector from '../src/components/CurrencySelector';
-import AddExpenseForm from '../src/components/AddExpenseForm';
-import Timeline from '../src/components/Timeline';
-import Insights from '../src/components/insights'; // New Import
+import CurrencySelector from '../components/CurrencySelector';
+import AddExpenseForm from '../components/AddExpenseForm';
+import Timeline from '../components/Timeline';
+import Insights from '../components/insights'; // New Import
 
 export default function Home() {
   // Added 'insights' to the view type
