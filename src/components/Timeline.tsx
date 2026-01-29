@@ -106,16 +106,19 @@ export default function Timeline() {
                     </p>
                   </div>
                 </div>
-
-                <div className="text-right flex-1 min-w-0">
-                  <p className="text-xl md:text-4xl font-black text-gray-900 truncate">
-                    <span className="text-xs md:text-lg text-green-600 mr-0.5">
-                      {settings?.currency?.symbol || '$'}
-                    </span>
-                    {Number(item.amount).toLocaleString()}
-                  </p>
                 </div>
-              </div>
+
+               <div className="text-right flex-1 min-w-0">
+  <p className="text-xl md:text-4xl font-black text-gray-900 leading-tight flex flex-wrap justify-end items-baseline">
+    <span className="text-xs md:text-lg text-green-600 mr-0.5">
+      {settings?.currency?.symbol || '$'}
+    </span>
+    {/* Removed truncate so the full number shows */}
+    <span className="whitespace-nowrap">
+      {Number(item.amount).toLocaleString()}
+    </span>
+  </p>
+</div>
 
               <AnimatePresence>
                 {expandedId === item.id && item.items && (

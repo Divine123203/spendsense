@@ -24,7 +24,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      // Force the background to stay white and text to stay dark
 <body className="bg-white text-black">
   {children}
 </body>
